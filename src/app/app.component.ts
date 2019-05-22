@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'angular-pdf-viewer';
+  pdfSrc = "assets/Pluralsight/Angular CLI.pdf"
   isMobile: boolean = false;
 
   checkForMobile(a) {
