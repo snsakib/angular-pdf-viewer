@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pdf-viewer';
+  pdfSrc: string = 'assets/Pluralsight/Angular CLI.pdf';
 }
