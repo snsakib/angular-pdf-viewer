@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-pdf-viewer';
-  pdfSrc: string = 'assets/Pluralsight/Angular CLI.pdf';
+  platform: string;
+
+  ngOnInit() {
+    this.platform = window.navigator.platform;
+  }
 }
