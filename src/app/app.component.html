@@ -1,5 +1,6 @@
 <h1>{{ isMobile }}</h1>
 <pdf-viewer
+  *ngIf="isMobile"
   src="assets/Pluralsight/Angular CLI.pdf"
   [render-text]="true"
   style="display: block;"
