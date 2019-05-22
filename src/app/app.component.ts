@@ -10,6 +10,6 @@ export class AppComponent implements OnInit {
   platform: string;
 
   ngOnInit() {
-    this.platform = window.navigator.platform;
+    this.platform = window.navigator.userAgent;
   }
 }
